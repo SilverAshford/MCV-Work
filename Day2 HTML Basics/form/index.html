@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    <form action="#" method="GET">
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="Your Name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]{10,11}" title="Invalid Number" required><br><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="contactPhone" name="contactMethod" value="Phone" required>
+        <label for="contactPhone">Phone</label>
+
+        <input type="radio" id="contactEmail" name="contactMethod" value="Email">
+        <label for="contactEmail">Email</label><br><br>
+
+        <label>Preferred Contact Not:</label><br>
+        <input type="radio" id="contactPhone2" name="contactMethodn" value="Phone" required>
+        <label for="contactPhone2">Phone</label>
+
+        <input type="radio" id="contactEmail2" name="contactMethodn" value="Email">
+        <label for="contactEmail2">Email</label><br><br>
+
+        <label>Services Interested In:</label><br>
+        <input type="checkbox" id="webDesign" name="services" value="Web Design">
+        <label for="webDesign">Web Design</label>
+
+        <input type="checkbox" id="seo" name="services" value="SEO">
+        <label for="seo">SEO</label>
+
+        <input type="checkbox" id="hosting" name="services" value="Hosting">
+        <label for="hosting">Hosting</label><br><br>
+
+        <label for="city">City:</label><br>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>--Select City--</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Giza">Giza</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>

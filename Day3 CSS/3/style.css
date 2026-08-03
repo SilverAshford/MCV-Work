@@ -1,0 +1,28 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.middle {
+    position: absolute;
+    letter-spacing: 10px;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.cut {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    left: 50%;
+    top: 99%;
+    z-index: 1;
+}

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: #f4f4f4;
+    height: 120vh;
+}
+
+.upside {
+    height: 3rem;
+    width: 100%vh;
+    background-color: rgb(50, 45, 40);
+    color: white;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+    margin: 2rem;
+}
+
+.note {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    background-color: rgb(228, 203, 115);
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.note1 {
+    top: 3rem;
+    left: 2rem;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+
+
+.note2 {
+    top: 12.5rem;
+    left: 11rem;
+    transform: rotate(2deg);
+}
+
+
+.note3 {
+    top: 25rem;
+    left: 2rem;
+    transform: rotate(-2deg);
+}
+
+.fixed {
+    width:5rem;
+    text-align: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 10px;
+    background-color: rgb(206, 53, 84);
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fixed:hover {
+    background-color: rgb(212, 38, 62);
+}
