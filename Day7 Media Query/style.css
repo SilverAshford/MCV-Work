@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#width {
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+    margin-top: 2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.traffic-light{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 400px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#circle1 {
+    background-color: rgb(152, 9, 67);
+}
+
+#circle2 {
+    background-color: rgb(255, 230, 64);
+}
+
+#circle3 {
+    background-color: rgb(8, 150, 83);
+}
+
+@media screen and (max-width: 600px) {
+    .traffic-light {
+        width: 120px;
+        height: 320px;
+    }
+
+    .circle {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .traffic-light {
+        width: 100px;
+        height: 280px;
+    }
+
+    .circle {
+        width: 55px;
+        height: 55px;
+    }
+}
