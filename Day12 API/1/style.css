@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.tables {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    font-size: 1rem;
+}
+
+#head {
+    font-size: 1.5rem;
+    background-color: rgb(157, 157, 157);
+}
+
+#head th {
+    text-align: center;
+    width: 50%;
+}
+
+.tables tr {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.tables th, 
+.tables td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* .tables tr:nth-child(even) {
+    background-color: #d0cfcf;
+} */

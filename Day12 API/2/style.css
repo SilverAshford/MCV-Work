@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #151724;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.headbar {
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #2f365b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headbar ul {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.headbar li {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.movie-card {
+    display: flex;
+    flex: 1;
+    min-width: 500px;
+    gap: 30px;
+    background-color: #3c1c6b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap;
+}
+
+.movie-poster {
+    width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: auto auto;
+}
+
+.movie-details {
+    flex: 1;
+    min-width: 280px;
+}
+
+.movie-details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.tagline {
+    font-style: italic;
+    color: #b3c0e8;
+    margin-bottom: 15px;
+}
+
+.genres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.genre-badge {
+    user-select: none;
+    color: black;
+    background-color: #fde000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+    background-color: #151724;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    color: #8b9bb4;
+    font-size: 0.85rem;
+}
+
+.info-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
